@@ -1,1 +1,1 @@
-Hello, World! Vesrsion 5
+Hello, World! Vesrsion 6. Pipeline
