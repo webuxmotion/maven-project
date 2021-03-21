@@ -26,6 +26,11 @@ pipeline {
             sh "cp **/target/*.war /usr/local/Cellar/tomcat/tomcat-staging/webapps"
           }
         }
+        stage ('Deploy to Prod') {
+          steps {
+            sh "cp **/target/*.war /usr/local/Cellar/tomcat/tomcat-prod/webapps"
+          }
+        }
       }
     }
   }
