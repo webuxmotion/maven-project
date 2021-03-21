@@ -5,16 +5,11 @@ pipeline {
     jdk 'localJDK'
   }
   stages{
-       stage ('Build'){
-        steps {
-          sh 'mvn clean package'
-        }
-       }
-       stage ('Deployments') {
-         steps {
-          sh 'Deploy step...'
-        }
-       }
-    }
+    stage ('Build'){
+      steps {
+        sh 'mvn clean package'
+      }
+    }   
+  }
 } 
   
